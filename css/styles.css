@@ -1,0 +1,31 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --secondary-black-color: #2f303a;
+  --secondary-bg: #f5f4fa;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.hero-title {
+  font-weight: 900;
+  color: var(--primary-white-color);
+  background-color: var(--secondary-black-color);
+}
+
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 500;
+}
+
+.btn {
+  cursor: pointer;
+}
