@@ -5,27 +5,192 @@
   --secondary-black-color: #2f303a;
   --secondary-bg: #f5f4fa;
   --accent-color: #2196f3;
+  --subtitle-1: 16px;
+  --subtitle-2: 14px;
 }
 
 body {
+  margin: auto;
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--subtitle-2);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
 }
 
-.hero-title {
-  font-weight: 900;
-  color: var(--primary-white-color);
-  background-color: var(--secondary-black-color);
-}
-
-.title {
-  color: var(--title-text-color);
-  font-weight: 700;
-}
-
-.subtitle {
-  font-weight: 500;
+.info,
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .btn {
+  background: var(--accent-color);
+  color: var(--primary-white-color);
+  border: unset;
+  border-radius: 4px;
+  text-align: center;
   cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+  color: var(--primary-white-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo .accent {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.page-footer .link:hover,
+.page-footer .link:focus,
+.contacts .info:hover,
+.contacts .info:focus {
+  color: var(--accent-color);
+}
+
+.contacts .info {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: var(--secondary-black-color);
+}
+
+.hero .btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: var(--subtitle-1);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.advantages .subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.our-team {
+  background-color: var(--secondary-bg);
+}
+
+.our-team .subtitle {
+  font-weight: 500;
+  font-size: var(--subtitle-1);
+  line-height: 1.18;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.our-team .text {
+  font-size: var(--subtitle-1);
+  line-height: 1.18;
+  text-align: center;
+}
+
+.examples .subtitle {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples .text {
+  font-size: var(--subtitle-1);
+  line-height: 1.87;
+}
+
+.btn-toogle {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: var(--subtitle-1);
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--secondary-bg);
+}
+
+.btn-toogle-active {
+  background: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.page-footer {
+  background-color: var(--secondary-black-color);
+}
+
+.page-footer .logo {
+  color: var(--primary-white-color);
+}
+
+.page-footer .footer-address {
+  font-style: inherit;
+  letter-spacing: 0.03em;
+}
+
+.page-footer .info {
+  color: var(--primary-white-color);
+}
+
+.page-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
